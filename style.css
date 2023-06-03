@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(238, 244, 247);
+  width: 100%;
+}
+body header {
+  width: 80%;
+  margin: 80px auto;
+}
+body header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+body header form {
+  margin: 0 auto;
+  width: 90%;
+}
+body header form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  padding: 6px;
+  font-size: 1em;
+  border: none;
+}
+body main {
+  margin: 0 auto;
+  width: 74%;
+  position: relative;
+}
+body main .loading {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+}
+body main article {
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  height: 280px;
+}
+body main article img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 10px solid white;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+body main article div {
+  position: absolute;
+  right: -50px;
+  bottom: 5px;
+  background-color: black;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+body main article div h1 {
+  margin: 15px 30px;
+  color: white;
+  font-size: 2em;
+}
+body main article:hover {
+  cursor: pointer;
+  filter: blur(1.5px) grayscale(50%);
+}
+body main article:hover img {
+  width: 101%;
+  height: 255px;
+}
+body main article:hover div {
+  right: -55px;
+  bottom: 1px;
+}
+@media (min-width: 800px) {
+  body header form {
+    width: 500px;
+  }
+  body main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main div {
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+    height: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  body main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
