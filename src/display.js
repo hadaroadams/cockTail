@@ -2,9 +2,14 @@ import getElement from "./element.js"
 import { dataBase } from "./database.js"
 
 
-export async function display(image,id , name){
+export async function display(newData){
+    let data
     getElement('main').innerHTML=`<img src="./Eclipse-1s-200px (1).gif" alt="" class='loading'>`
-    let data = await dataBase()
+    if(newData){
+        data = await newData
+    }else{
+        data = await dataBase()
+    }
     getElement('main').innerHTML=``
     console.log(data)
     data.map((item)=>{
