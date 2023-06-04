@@ -12,11 +12,11 @@ let fetchData = async(value) => {
     try{
         let data = await fetch(Api_url)
         let resp = await data.json()
+        console.log(resp)
         return resp
 
     }catch(error){
         console.log(error)
     }
-   console.log(resp)
 }
 export default fetchData

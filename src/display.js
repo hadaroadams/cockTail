@@ -16,7 +16,7 @@ export async function display(newData){
         let article = document.createElement('div')
         let cocktailSection = getElement('main')
         let content = `
-                    <a href="./Drink/drink.html?id=${item.id}">
+                    <a href="./Drink/drink.html?id=${item.id}&name=Hadaro&age=20">
                         <article>
                             <img src="${item.image}" alt="">
                             <div>
